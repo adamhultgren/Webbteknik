@@ -9,6 +9,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<script defer src="js/jquery-3.7.1.min.js"></script>
+	<script defer src="js/jqueryui/jquery-ui.js"></script>
+	<script defer src="js/produktsida.js"></script>
 </head>
 
 <body>
@@ -57,33 +60,23 @@
 			</div>
 		</nav>
 		
-
-
-
-
-
-
-
-
-
-
 		<div class="product_wrapper">
 			<div class="product_visuals">
-				<img src="Bilder/Catan_produktsida.png" alt="">
+				<div class="big_img_container"><img src="Bilder/Catan_produktsida.png" alt=""  id="big_pic"></div>
 				<div class="product_media_container">
 					<div class="mediabar_container">
-						<button class="scroll_button_mediabar">
+						<button id="scrollbtn1" class="scroll_button_mediabar">
 							<i class="fa-solid fa-chevron-left"></i>
 						</button>
-						<img src="Bilder/Catan_produktsida.png" alt="" id="product_img_diff_frame">
-						<img src="Bilder/catan_produktbild.png" alt="">
-						<img src="Bilder/catan_produktbild2.jpg" alt="">
-						<img src="Bilder/catan_produktbild3.webp" alt="">
-						<button class="scroll_button_mediabar">
+						<img src="Bilder/Catan_produktsida.png" alt="" class="small_img">
+						<img src="Bilder/catan_produktbild.png" alt="" class="small_img">
+						<img src="Bilder/catan_produktbild2.jpg" alt="" class="small_img">
+						<img src="Bilder/catan_produktbild3.webp" alt="" class="small_img">
+						<button id="scrollbtn2" class="scroll_button_mediabar">
 							<i class="fa-solid fa-chevron-right"></i>
 						</button>
 					</div>
-				</div>
+				</div>	
 				<div class="product_meny_container">
 					<div class="product_meny"><p>Produktbeskrivning</p><i class="fa-solid fa-chevron-right"></i></div>
 					<div class="product_meny"><p>Innehållsförteckning</p><i class="fa-solid fa-chevron-right"></i></div>

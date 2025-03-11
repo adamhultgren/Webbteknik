@@ -10,6 +10,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<script defer src="js/jquery-3.7.1.min.js"></script>
+	<script defer src="js/jqueryui/jquery-ui.js"></script>
+	<script defer src="js/index.js"></script>
 </head>
 
 <body>
@@ -29,9 +32,9 @@
 					<p> Logga in</p>
 				</div>
 			</a>
-			<a href="kassa.html" class="shoppingcart_icon">
+			<a href="kassa.html" id="shoppingcart_icon">
 				<div class="icon_link">
-					<i class="fa-solid fa-cart-shopping shoppingcart_icon"></i>
+					<i class="fa-solid fa-cart-shopping"></i>
 					<p>Varukorg</p>
 				</div>
 			</a>
@@ -42,7 +45,40 @@
 		<nav class="navbar">
 			<div class="navbar_container">
 				<ul class="navbar_menu">
-					<li class="navbar_item"><a href="" id="Erbjudanden"><i class="fa-solid fa-tag" style="color: #ffac47;"></i><p>Erbjudanden</p></a></li>
+					<li class="navbar_item" id="Erbjudanden">
+						<a href="">
+							<i class="fa-solid fa-tag" style="color: #ffac47;"></i><p>Erbjudanden</p>
+						</a>
+						<ul class="dropdown_menu">
+							<ul class="dropdown_item">
+								<li class="listh1">Kategori</li>
+								<li><a href="">2-Spelare</a></li>
+								<li><a href="">Pussel</a></li>
+								<li><a href="">Tärningsspel</a></li>
+								<li><a href="">Bluff</a></li>
+								<li><a href="">Musik</a></li>
+							</ul>
+							<hr class="rounded">
+							<ul class="dropdown_item">
+								<li class="listh1">Serie</li>
+								<li><a href="">Bingo</a></li>
+								<li><a href="">Exit</a></li>
+								<li><a href="">Monopol</a></li>
+								<li><a href="">Uno</a></li>
+								<li><a href="">Ticket to ride</a></li>
+							</ul>
+							<hr class="rounded">
+							<ul class="dropdown_item">
+								<li class="listh1">Tillverkare</li>
+								<li><a href="">Alga</a></li>
+								<li><a href="">Amigo</a></li>
+								<li><a href="">Hasbro</a></li>
+								<li><a href="">Gigamic</a></li>
+								<li><a href="">Brädspel.se</a></li>
+								
+							</ul>
+						</ul>
+					</li>
 					<li class="navbar_item"><a href="" id="Barnspel"><i class="fa-solid fa-children"></i><p>Barnspel</p></a></li>
 					<li class="navbar_item"><a href="" id="Kortspel"><i class="fa-solid fa-diamond"></i><p>Kortspel</p></a></li>
 					<li class="navbar_item"><a href="" id="Krigsspel"><i class="fa-solid fa-jet-fighter"></i><p>Krigsspel</p></a></li>
@@ -74,10 +110,10 @@
 				<i class="fa-solid fa-chevron-right"></i>
 			</button>
 			<div class="big_item_container">
-				<div class="single_item_container">
+				<div id="dragbar_item_container" class="single_item_container">
 					<div class="item_img_container">
 						<a href="produktsida.html">
-							<img src="Bilder/catan-settlers-of-catan.jpeg" alt="item_pic">
+							<img id="dragbarbild" src="Bilder/Catan_produktsida.png" alt="item_pic">
 						</a>
 					</div>
 					<div class="item_text_container">
@@ -257,7 +293,7 @@
 				</a>
 			</div>
 		</div>
-
+		<button id="pagetopbtn"><i class="fa-solid fa-arrow-up"></i></button>
 	</main>
 
 	<footer>
@@ -282,7 +318,7 @@
 					<p>Björnvägen 11, 906 40 UMEÅ</p>
 				</div>
 			</div>
-			<div class="information_column">
+			<div class="information_column" id="text_column">
 				<h2>Information</h2>
 				<a href="">Om oss</a>
 				<a href="">Butiken i Umeå</a>
@@ -290,7 +326,7 @@
 				<a href="">Köpvillkor</a>
 				<a href="">Om Cookies</a>
 			</div>
-			<div class="information_column">
+			<div class="information_column" id="text_column">
 				<h2>Hjälp och vägledning</h2>
 				<a href="">Topplistor</a>
 				<a href="">Recensioner</a>

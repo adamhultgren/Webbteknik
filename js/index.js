@@ -19,7 +19,7 @@ for(let x = 0; x < items.length; x++)
 	let icon = items[x].querySelector("i");
 	items[x].onmouseover = function()
 	{
-		icon.style.transform = "scale(1.2)";
+		icon.style.transform = "scale(1.1)";
 	};
 
 	items[x].onmouseout = function()
@@ -51,7 +51,7 @@ $(window).scroll(function()
 	if($(window).scrollTop() > 1300)
 	{
 		$("#pagetopbtn").fadeIn();
-		
+
 	} else
 	{
 		$("#pagetopbtn").fadeOut();

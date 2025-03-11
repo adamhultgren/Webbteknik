@@ -51,6 +51,7 @@ $(window).scroll(function()
 	if($(window).scrollTop() > 1300)
 	{
 		$("#pagetopbtn").fadeIn();
+		
 	} else
 	{
 		$("#pagetopbtn").fadeOut();

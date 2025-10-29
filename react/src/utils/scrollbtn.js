@@ -12,7 +12,8 @@ export const scrollbtn = () =>
       $("#pagetopbtn").removeClass("visible");
     }
   });
-  $("#pagetopbtn").on("click", function () {
+  $("#pagetopbtn").click(function () {
     $("html, body").animate({ scrollTop: 0}, 400);
   });
 };
+

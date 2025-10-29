@@ -6,7 +6,8 @@ import { scrollbtn } from "../utils/scrollbtn";
 
 
 class Home extends React.Component{
-	componentDidMount(){
+	componentDidMount()
+	{
 		scrollbtn();
 	}
 	render(){

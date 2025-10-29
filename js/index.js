@@ -1,3 +1,5 @@
+
+
 let searchbar = document.querySelector(".search_bar");
 let searchbarInput = document.querySelector(".search_bar input");
 
